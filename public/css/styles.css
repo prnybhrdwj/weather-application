@@ -1,0 +1,97 @@
+body {
+    color: #333333;
+    font-family: arial;
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-box {
+    max-width: 650px;
+    display: flex; /*flexbox style code */
+    flex-direction: column;
+    min-height: 100vh; /* 100% of viewport height */
+    margin: 0px auto;
+    padding: 0 16px;
+    background: white;
+    opacity: 0.9;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin: 16px 0 48px 0;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: black;
+}
+
+.portrait {
+    width: 250px;
+}
+
+.main-content {
+    flex-grow: 1; /*makes the flex box grow to 100% possible height. Only footer fixed margin space is left. Everything else is taken up by main-content*/
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    flex-grow:2;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+#weather-result {
+    border: 1px solid #888888;
+    margin-top: 25px;
+    display: none;
+    text-align: center;
+    border-radius: 15px;
+    height: 250px;
+    box-shadow: 3px 3px 5px 6px blue;
+    padding-top: 30px;
+}
+
+.img-background {
+    z-index: -1;
+    position: absolute;
+    min-width: 1024px;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
