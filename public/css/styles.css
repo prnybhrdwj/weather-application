@@ -74,15 +74,12 @@ button {
     padding: 8px;
 }
 
-#weather-result {
-    border: 1px solid #888888;
-    margin-top: 25px;
-    display: none;
-    text-align: center;
-    border-radius: 15px;
-    height: 250px;
-    box-shadow: 3px 3px 5px 6px blue;
-    padding-top: 30px;
+#message1 {
+    font-size: 40px;
+}
+
+#message3 {
+    font-size: 60px;
 }
 
 .img-background {

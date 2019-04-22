@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 //Define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -21,7 +21,7 @@ hbs.registerPartials(partialsPath)
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: "Weather report",
+        title: "Weather app",
         name: 'Pranay Bhardwaj'
     })
 })
@@ -44,7 +44,7 @@ app.get('/help', (req, res) => {
     })
 })
 
-
+//main weather application homepage route
 app.get('/weather', (req, res) => {
 
     const address = req.query.address
@@ -79,7 +79,7 @@ app.get('/weather', (req, res) => {
 })
 
 
-
+//setting up error paths
 app.get('/help/*', (req, res) => {
     res.render('error-page', {
         title: 'Help',
